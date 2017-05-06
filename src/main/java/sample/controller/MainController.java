@@ -66,7 +66,7 @@ public class MainController implements ConnectionListener, Initializable{
 
     public void onClose(ActionEvent actionEvent) {
 
-        Message msg = new MessageImpl(txtName.getText()," пользователь вышел", Message.CLOSE_TYPE);
+        Message msg = new MessageImpl(txtName.getText()," Пользователь вышел", Message.CLOSE_TYPE);
         connection.send(msg);
         txtSend.clear();
         txtChat.clear();
